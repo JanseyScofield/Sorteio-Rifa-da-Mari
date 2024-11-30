@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bege-200 : #F5F5DC;
+    --bege-500 : #E2D7B9;
+    --bege-900 : #D0C8A1;
+    --rosa-200 : #FADCD9;
+    --rosa-400 : #F4C6C3;
+    --rosa-700 : #9B4D5B;
+    --rosa-900 : #9B4D7F;
+    --cinza-200 : #D1D1D1;
+    --branco : #FAF9F6;
+}
+
+body{
+    background-color: var(--bege-200);
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content : center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.titulos{
+    font-size: 3rem;
+    color: var(--rosa-700);
+    font-family: "Playwrite HR Lijeva", cursive;
+    font-optical-sizing: auto;
+    font-weight: 2rem;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
+
+.botoes-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--rosa-700);
+    color: var(--branco);
+    text-decoration: none;
+    outline: none;
+    border-radius: 16px;
+
+    width: 10rem;
+    height: 4rem;
+}
+
+.botoes-navegacao:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+    background-color: var(--rosa-900);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+#roleta{
+    background-color: var(--rosa-700);
+    border-radius: 10px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 10rem;
+}
+
+#numero-sorteado{
+    color: var(--branco);
+
+    font-size: 5rem;
+}
+
+.botoes-acoes{
+    background-color: var(--rosa-700);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 16px;
+
+    width: 10rem;
+    height: 4rem;
+}
+
+.botoes-acoes:active{
+    transform: scale(0.9);
+    transition: 0.2s;
+}
+
+#bloco-numeros{
+    border: 5px solid var(--rosa-700);
+
+    width: 23rem;
+    height: 30rem;
+
+    margin-top: -3rem;
+    margin-bottom: 3rem;
+}
+
+.numero-cadastrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+    border-right: 3px solid var(--rosa-400);
+    border-bottom: 3px solid var(--rosa-400);
+
+    width: 20%;
+    height: 15%;
+}
+
+#botao-remover-numero{
+    margin-right: 3rem;
+}
+
+#botao-salvar-numero{
+    display: none;
+}
