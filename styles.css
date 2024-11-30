@@ -107,10 +107,13 @@ main{
 }
 
 #bloco-numeros{
+    display: flex;
+    flex-wrap: wrap;
     border: 5px solid var(--rosa-700);
 
-    width: 23rem;
-    height: 30rem;
+    width: 100%;
+    max-width: 23rem;
+    min-height: 30rem;
 
     margin-top: -3rem;
     margin-bottom: 3rem;
@@ -125,7 +128,7 @@ main{
     border-right: 3px solid var(--rosa-400);
     border-bottom: 3px solid var(--rosa-400);
     background-color: var(--bege-200);
-    
+
     width: 20%;
     height: 15%;
 }
