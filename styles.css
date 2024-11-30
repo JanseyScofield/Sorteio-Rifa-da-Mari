@@ -124,7 +124,8 @@ main{
     font-size: 30px;
     border-right: 3px solid var(--rosa-400);
     border-bottom: 3px solid var(--rosa-400);
-
+    background-color: var(--bege-200);
+    
     width: 20%;
     height: 15%;
 }
